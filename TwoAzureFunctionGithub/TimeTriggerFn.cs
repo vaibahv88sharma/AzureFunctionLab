@@ -19,7 +19,7 @@ namespace TwoAzureFunctionGithub
             {
                 log.LogInformation("Timer is running late!");
             }
-            log.LogInformation("myTimer.Schedule ---- ",myTimer.Schedule.ToString());
+            log.LogInformation("myTimer.Schedule ===== ",myTimer.Schedule.ToString());
 
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
         }
