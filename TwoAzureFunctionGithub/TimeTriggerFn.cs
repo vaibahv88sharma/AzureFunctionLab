@@ -13,11 +13,11 @@ namespace TwoAzureFunctionGithub
     public static class TimeTriggerFn
     {
         [FunctionName("TimerTriggerCSharp")]
-        public static void Run([TimerTrigger("0 */5 * * * *")] TimerInfo myTimer, ILogger log)
+        public static void Run([TimerTrigger("0 */2 * * * *")] TimerInfo myTimer, ILogger log)
         {
             if (myTimer.IsPastDue)
             {
-                log.LogInformation("Timer is running late!");
+                log.LogInformation("Timer is runsning late!");
             }
             log.LogInformation("myTimer.Schedule ===== ",myTimer.Schedule.ToString());
 
